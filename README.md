@@ -3,48 +3,27 @@
 Given a web-based application that reads RSS feeds, several tests were added using [Jasmine](http://jasmine.github.io/).
 
 Tests included are:
-1. Test Suite to test the allFeeds object
-a. Test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty
-  1. Test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty
-3. Write a new test suite named "The menu"
-What are you describe-ing in this test suite?
-Write a test that ensures the menu element is hidden by default
-You'll have to analyze the HTML and the CSS to determine how the hiding/showing of the menu element is implemented
-What code in app.js is directly involved with toggling the menu on and off?
-Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
-Think about how you wrote the previous test. What is different this time around?
-Which clickable element are you checking for?
-How do you "simulate" a mouse click that element without actually clicking it?
-Write a test suite named "Initial Entries"
-What are you describe-ing in this test suite?
-Write a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container
-How does Jasmine's beforeEach()function work?
-How does the loadFeed() function in app.js work? Is it synchronous or asynchronous?
-Write a test suite named "New Feed Selection".
-What are you describe-ing in this test suite?
-Write a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes
-How is this test different from the previous test?
+### Test Suite to test the allFeeds object
+1. Test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty
+2. Test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty
+
+### Write a new test suite named "The menu"
+1. Test that ensures the menu element is hidden by default
+2. Test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
+
+### Write a test suite named "Initial Entries"
+1. Test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container
+
+### Write a test suite named "New Feed Selection".
+1. Test that ensures when a new feed is loaded by the loadFeed function that the content actually changes
+
+## How to run the application
+
+1. Clone the project locally
+2. Open the `index.html` file
 
 
-## Why this Project?
-
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
-
-Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
-
-
-## What will I learn?
-
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
-
-## How will this help my career?
-
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
-
-# How will I complete this project?
+# How the project was completed
 
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
