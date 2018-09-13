@@ -1,6 +1,29 @@
 # Project Overview
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+Given a web-based application that reads RSS feeds, several tests were added using [Jasmine](http://jasmine.github.io/).
+
+Tests included are:
+1. Test Suite to test the allFeeds object
+a. Test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty
+  1. Test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty
+3. Write a new test suite named "The menu"
+What are you describe-ing in this test suite?
+Write a test that ensures the menu element is hidden by default
+You'll have to analyze the HTML and the CSS to determine how the hiding/showing of the menu element is implemented
+What code in app.js is directly involved with toggling the menu on and off?
+Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display itself when clicked, and does it hide when clicked again?
+Think about how you wrote the previous test. What is different this time around?
+Which clickable element are you checking for?
+How do you "simulate" a mouse click that element without actually clicking it?
+Write a test suite named "Initial Entries"
+What are you describe-ing in this test suite?
+Write a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container
+How does Jasmine's beforeEach()function work?
+How does the loadFeed() function in app.js work? Is it synchronous or asynchronous?
+Write a test suite named "New Feed Selection".
+What are you describe-ing in this test suite?
+Write a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes
+How is this test different from the previous test?
 
 
 ## Why this Project?
