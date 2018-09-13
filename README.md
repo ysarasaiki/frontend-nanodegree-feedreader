@@ -3,6 +3,7 @@
 Given a web-based application that reads RSS feeds, several tests were added using [Jasmine](http://jasmine.github.io/).
 
 Tests included are:
+
 **Test Suite to test the allFeeds object**
 1. Test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty
 2. Test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty
